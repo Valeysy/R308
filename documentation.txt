@@ -1,0 +1,36 @@
+python -m venv venv
+./venv/script/activate
+
+
+Documentation :
+
+
+Modules : Sphinx, furo, sphinx-autobuild
+
+
+mkdir src, mkdir docs, cd docs
+sphinx-quickstart
+
+
+conf.py
+dans extensions : ["sphinx.ext.autodoc"]
+en haut du fichier
+import os import sys sys.path.insert (0, os path. abspath (" … /src.") )
+
+
+theme furo
+
+
+cd …
+sphinx-apidoc -o docs srs
+
+
+dans le fichier index.rst
+"toctree"
+
+
+modules
+
+
+cd docs
+./make html
